@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  Katas 2
+</header>
+<body>
+    <p>Inspect Me
+        <script>
+            console.log("Add")
+              function add (a,b) {
+                let c = a + b;
+                return c;
+              }
+              add(2,4);
+              
+            
+            console.log("multiply")    
+              function multiply (a,b)
+                {
+                let answer=0;
+                for (let i =0; i < b; i++ ) {
+                  answer= add(answer,a);
+                }
+                return answer;
+                }
+                let maths= multiply(6,8)
+                console.log(maths);
+              
+            console.log("power")    
+              function power (x,n)
+                {
+                let answer=1
+                for (let i=0; i<n; i++){
+                  answer=multiply(answer,x);
+                }
+                return answer;
+                }
+                let results= power(2,8)
+                console.log(results)
+        
+            console.log("factorial")
+              
+              function factorial (x){
+                let answer=1
+                for (let i=1; i<=x; i++){
+                  answer=multiply(i,answer);
+                }
+                return answer;
+              }
+                let swers=factorial(4);
+                console.log(swers)
+        
+            console.log("fibonacci")
+              
+              function fibonacci (n) {
+                let a=0, b=1;
+                for (let i=3; i<=n; i++){
+                  f=add(a,b);
+                  a=b;
+                  b=f;
+              } 
+                return f;
+              }
+                
+              console.log(fibonacci(8))
+            </script>
+    </p>
+</body>
+</html>
